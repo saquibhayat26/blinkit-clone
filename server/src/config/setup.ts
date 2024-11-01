@@ -13,6 +13,7 @@ import {
 AdminJS.registerAdapter(AdminJSMongoose);
 
 export const adminjsOptions = new AdminJS({
+  databases: [],
   resources: [
     {
       resource: Models.Customer,
@@ -38,6 +39,8 @@ export const adminjsOptions = new AdminJS({
     {
       resource: Models.Branch,
     },
+    { resource: Models.Category },
+    { resource: Models.Product },
   ],
 
   branding: {
@@ -54,15 +57,13 @@ export const buildAdminJSRouter = async (app: any) => {
   await AdminJSFastify.buildAuthenticatedRouter(
     adminjsOptions,
     {
-      authenticate: async (email: string, password: string) => {
-        return authenticateAdmin(email, password);
-      },
+      authenticate: authenticateAdmin,
       cookiePassword: COOKIE_PASSWORD,
       cookieName: "adminjs",
     },
     app,
     {
-      store: sessionStore,
+      store: sessionStore as any,
       saveUninitialized: true,
       secret: COOKIE_PASSWORD,
       cookie: {

@@ -35,3 +35,20 @@ export type BranchType = {
   address: string;
   deliveryPartners: string[];
 };
+
+export type CategoryType = {
+  _id: string;
+  name: string;
+  image: string;
+};
+
+export type ProductType = {
+  _id: string;
+  name: string;
+  description: string;
+  image: string;
+  price: number;
+  discountPrice: number;
+  quantity: string;
+  category: string;
+};
