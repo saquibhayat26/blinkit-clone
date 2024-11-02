@@ -28,7 +28,7 @@ export type AdminType = UserType & {
 export type BranchType = {
   _id: string;
   name: string;
-  liveLocation: {
+  location: {
     latitude: number;
     longitude: number;
   };

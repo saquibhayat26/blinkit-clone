@@ -80,8 +80,8 @@ const OrderSchema = new Mongoose.Schema({
   status: {
     type: String,
     enum: [
+      // "pending",
       "available",
-      "pending",
       "confirmed",
       "arriving",
       "delivered",
