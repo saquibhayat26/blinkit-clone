@@ -3,18 +3,21 @@ import Fastify from "fastify";
 import { connectDB } from "./src/config/connect.js";
 import { PORT, URI } from "./src/config/config.js";
 import { adminjsOptions, buildAdminJSRouter } from "./src/config/setup.js";
+import { registerRoutes } from "./src/routes/index.js";
 
 const startServer = async () => {
   await connectDB(URI);
 
   const app = Fastify({ logger: true });
 
+  await registerRoutes(app);
+
   await buildAdminJSRouter(app);
 
   try {
     // Declare a route
     app.get("/", async function handler(request, reply) {
-      reply.send({ hello: "world" });
+      return reply.send({ hello: "world" });
     });
 
     // Run the server!

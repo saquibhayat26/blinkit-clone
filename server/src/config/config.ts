@@ -11,6 +11,10 @@ export const PORT = (process.env.PORT as unknown as number) ?? 3000;
 export const PRODUCTION = process.env.NODE_ENV === "production";
 export const COOKIE_PASSWORD = process.env.COOKIE_PASSWORD as string;
 export const SESSION_SECRET = process.env.SESSION_SECRET as string;
+export const ACCESS_T = process.env.JWT_ACCESS_SECRET as string;
+export const ACCESS_T_EXPIRY = process.env.JWT_ACCESS_EXPIRY as string;
+export const REFRESH_T = process.env.JWT_REFRESH_SECRET as string;
+export const REFRESH_T_EXPIRY = process.env.JWT_REFRESH_EXPIRY as string;
 
 // session store
 export const sessionStore = new MongoDBStore({

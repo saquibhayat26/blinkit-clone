@@ -1,5 +1,5 @@
 import Mongoose from "mongoose";
-import bcrypt from "bcryptjs";
+// import bcrypt from "bcryptjs";
 import {
   AdminType,
   CustomerType,
@@ -104,13 +104,13 @@ const AdminSchema = new Mongoose.Schema({
   },
 });
 
-// encrypt the password before saving it to the database, this is a middleware of mongodb
-DeliveryPartnerSchema.pre("save", async function (next) {
-  if (this.isModified("password")) {
-    this.password = await bcrypt.hash(this.password, 10);
-  }
-  next();
-});
+// // encrypt the password before saving it to the database, this is a middleware of mongodb
+// DeliveryPartnerSchema.pre("save", async function (next) {
+//   if (this.isModified("password")) {
+//     this.password = await bcrypt.hash(this.password, 10);
+//   }
+//   next();
+// });
 // AdminSchema.pre("save", async function (next) {
 //   if (this.isModified("password")) {
 //     this.password = await bcrypt.hash(this.password, 10);
