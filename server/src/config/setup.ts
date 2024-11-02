@@ -41,6 +41,8 @@ export const adminjsOptions = new AdminJS({
     },
     { resource: Models.Category },
     { resource: Models.Product },
+    { resource: Models.Order },
+    { resource: Models.Counter },
   ],
 
   branding: {

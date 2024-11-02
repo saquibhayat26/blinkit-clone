@@ -52,3 +52,39 @@ export type ProductType = {
   quantity: string;
   category: string;
 };
+
+export type CounterType = {
+  name: string;
+  sequence_value: number;
+};
+
+export type OrderType = {
+  orderId: string;
+  customer: string;
+  deliveryPartner: string;
+  branch: string;
+  products: {
+    id: string;
+    item: string;
+    quantity: number;
+  }[];
+  deliveryLocation: {
+    latitude: number;
+    longitude: number;
+    address: string;
+  };
+  pickupLocation: {
+    latitude: number;
+    longitude: number;
+    address: string;
+  };
+  deliveryPersonLocation: {
+    latitude: number;
+    longitude: number;
+    address: string;
+  };
+  status: string;
+  totalPrice: number;
+  createdAt: string;
+  updatedAt: string;
+};
