@@ -29,5 +29,10 @@
     "transpileOnly": true
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["./src/**/*.ts", "seedData.ts", "seedScript.ts"]
+  "include": [
+    "./src/**/*.ts",
+    "seedData.ts",
+    "seedScript.ts",
+    "fastify-socketio.d.ts"
+  ]
 }
