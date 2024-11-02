@@ -1,4 +1,5 @@
-import fastify from "fastify";
+import { FastifyInstance, FastifyPluginOptions } from "fastify";
+
 import {
   fetchUser,
   generateRefreshToken,
@@ -9,8 +10,8 @@ import { verifyToken } from "./../middleware/auth.js";
 import { updateUser } from "../controllers/tracking/user.js";
 
 export const authRoutes = async (
-  fastify: fastify.FastifyInstance,
-  options: fastify.FastifyPluginOptions
+  fastify: FastifyInstance,
+  options: FastifyPluginOptions
 ) => {
   fastify.post("/customer/login", loginCustomer);
   fastify.post("/delivery/login", loginDeliveryPartner);
