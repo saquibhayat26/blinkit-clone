@@ -1,7 +1,7 @@
 
 
 # Node.js dependencies
-client/blinkitClone/node_modules
+client/blinkitClone/node_modules/
 server/node_modules
 
 # Logs
