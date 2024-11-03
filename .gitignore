@@ -1,7 +1,7 @@
 
 
 # Node.js dependencies
-client/node_modules
+client/blinkit-clone/node_modules/*
 server/node_modules
 
 # Logs
@@ -17,12 +17,40 @@ client/.env
 server/.env
 
 # Compiled files and folders (if applicable)
-client/dist/
+client/blinkit-clone/dist/
 server/dist/
-client/build/
+client/blinkit-clone/build/
 server/build/
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
+
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# Expo
+client/blinkit-clone/node_modules
+client/blinkit-clone/.expo/
+client/blinkit-clone/dist/
+client/blinkit-clone/web-build/
+# Native
+client/blinkit-clone/*.orig.*
+client/blinkit-clone/*.jks
+client/blinkit-clone/*.p8
+client/blinkit-clone/*.p12
+client/blinkit-clone/*.key
+client/blinkit-clone/*.mobileprovision
+# Metro
+client/blinkit-clone/.metro-health-check*
+# debug
+client/blinkit-clone/npm-debug.*
+client/blinkit-clone/yarn-debug.*
+client/blinkit-clone/yarn-error.*
+# macOS
+client/blinkit-clone/.DS_Store
+client/blinkit-clone/*.pem
+# local env files
+client/blinkit-clone/.env*.local
+# typescript
+client/blinkit-clone/*.tsbuildinfo
