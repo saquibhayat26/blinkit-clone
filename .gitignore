@@ -1,7 +1,7 @@
 
 
 # Node.js dependencies
-client/blinkit-clone/node_modules/*
+client/blinkit-clone/node_modules
 server/node_modules
 
 # Logs
@@ -29,28 +29,83 @@ Thumbs.db
 
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# Expo
-client/blinkit-clone/node_modules
-client/blinkit-clone/.expo/
-client/blinkit-clone/dist/
-client/blinkit-clone/web-build/
-# Native
-client/blinkit-clone/*.orig.*
-client/blinkit-clone/*.jks
-client/blinkit-clone/*.p8
-client/blinkit-clone/*.p12
-client/blinkit-clone/*.key
-client/blinkit-clone/*.mobileprovision
-# Metro
-client/blinkit-clone/.metro-health-check*
-# debug
-client/blinkit-clone/npm-debug.*
-client/blinkit-clone/yarn-debug.*
-client/blinkit-clone/yarn-error.*
-# macOS
+# OSX
+#
 client/blinkit-clone/.DS_Store
-client/blinkit-clone/*.pem
-# local env files
-client/blinkit-clone/.env*.local
-# typescript
-client/blinkit-clone/*.tsbuildinfo
+
+# Xcode
+#`
+client/blinkit-clone/build/
+client/blinkit-clone/*.pbxuser
+client/blinkit-clone/!default.pbxuser
+client/blinkit-clone/*.mode1v3
+client/blinkit-clone/!default.mode1v3
+client/blinkit-clone/*.mode2v3
+client/blinkit-clone/!default.mode2v3
+client/blinkit-clone/*.perspectivev3
+client/blinkit-clone/!default.perspectivev3
+client/blinkit-clone/xcuserdata
+client/blinkit-clone/*.xccheckout
+client/blinkit-clone/*.moved-aside
+client/blinkit-clone/DerivedData
+client/blinkit-clone/*.hmap
+client/blinkit-clone/*.ipa
+client/blinkit-clone/*.xcuserstate
+client/blinkit-clone/**/.xcode.env.local
+
+# Android/IntelliJ
+#
+client/blinkit-clone/build/
+client/blinkit-clone/.idea
+client/blinkit-clone/.gradle
+client/blinkit-clone/android/.gradle
+client/blinkit-clone/android/gradle
+client/blinkit-clone/android/gradle/wrapper
+client/blinkit-clone/android/app/.cxx
+client/blinkit-clone/android/app/build
+client/blinkit-clone/local.properties
+client/blinkit-clone/*.iml
+client/blinkit-clone/*.hprof
+client/blinkit-clone/.cxx/
+client/blinkit-clone/*.keystore
+client/blinkit-clone/!debug.keystore
+
+# node.js
+#
+client/blinkit-clone/node_modules/
+client/blinkit-clone/npm-debug.log
+client/blinkit-clone/yarn-error.log
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+client/blinkit-clone/**/fastlane/report.xml
+client/blinkit-clone/**/fastlane/Preview.html
+client/blinkit-clone/**/fastlane/screenshots
+client/blinkit-clone/**/fastlane/test_output
+
+# Bundle artifact
+client/blinkit-clone/*.jsbundle
+
+# Ruby / CocoaPods
+client/blinkit-clone/**/Pods/
+client/blinkit-clone/vendor/bundle/
+
+# Temporary files created by Metro to check the health of the file watcher
+client/blinkit-clone/.metro-health-check*
+
+# testing
+client/blinkit-clone/coverage
+
+# Yarn
+client/blinkit-clone/.yarn/*
+client/blinkit-clone/!.yarn/patches
+client/blinkit-clone/!.yarn/plugins
+client/blinkit-clone/!.yarn/releases
+client/blinkit-clone/!.yarn/sdks
+client/blinkit-clone/!.yarn/versions
+
