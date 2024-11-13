@@ -1,7 +1,7 @@
 
 
 # Node.js dependencies
-client/blinkitClone/node_modules/
+client/node_modules/
 server/node_modules
 
 # Logs
@@ -17,9 +17,9 @@ client/.env
 server/.env
 
 # Compiled files and folders (if applicable)
-client/blinkitClone/dist/
+client/dist/
 server/dist/
-client/blinkitClone/build/
+client/build/
 server/build/
 
 # OS generated files
@@ -31,50 +31,50 @@ Thumbs.db
 
 # OSX
 #
-client/blinkitClone/.DS_Store
+client/.DS_Store
 
 # Xcode
 #`
-client/blinkitClone/build/
-client/blinkitClone/*.pbxuser
-client/blinkitClone/!default.pbxuser
-client/blinkitClone/*.mode1v3
-client/blinkitClone/!default.mode1v3
-client/blinkitClone/*.mode2v3
-client/blinkitClone/!default.mode2v3
-client/blinkitClone/*.perspectivev3
-client/blinkitClone/!default.perspectivev3
-client/blinkitClone/xcuserdata
-client/blinkitClone/*.xccheckout
-client/blinkitClone/*.moved-aside
-client/blinkitClone/DerivedData
-client/blinkitClone/*.hmap
-client/blinkitClone/*.ipa
-client/blinkitClone/*.xcuserstate
-client/blinkitClone/**/.xcode.env.local
+client/build/
+client/*.pbxuser
+client/!default.pbxuser
+client/*.mode1v3
+client/!default.mode1v3
+client/*.mode2v3
+client/!default.mode2v3
+client/*.perspectivev3
+client/!default.perspectivev3
+client/xcuserdata
+client/*.xccheckout
+client/*.moved-aside
+client/DerivedData
+client/*.hmap
+client/*.ipa
+client/*.xcuserstate
+client/**/.xcode.env.local
 
 # Android/IntelliJ
 #
-client/blinkitClone/build/
-client/blinkitClone/.idea
-client/blinkitClone/.gradle
-client/blinkitClone/android/.gradle
-client/blinkitClone/android/gradle
-client/blinkitClone/android/gradle/wrapper
-client/blinkitClone/android/app/.cxx
-client/blinkitClone/android/app/build
-client/blinkitClone/local.properties
-client/blinkitClone/*.iml
-client/blinkitClone/*.hprof
-client/blinkitClone/.cxx/
-client/blinkitClone/*.keystore
-client/blinkitClone/!debug.keystore
+client/build/
+client/.idea
+client/.gradle
+client/android/.gradle
+client/android/gradle
+client/android/gradle/wrapper
+client/android/app/.cxx
+client/android/app/build
+client/local.properties
+client/*.iml
+client/*.hprof
+client/.cxx/
+client/*.keystore
+client/!debug.keystore
 
 # node.js
 #
-client/blinkitClone/node_modules/
-client/blinkitClone/npm-debug.log
-client/blinkitClone/yarn-error.log
+client/node_modules/
+client/npm-debug.log
+client/yarn-error.log
 
 # fastlane
 #
@@ -83,29 +83,29 @@ client/blinkitClone/yarn-error.log
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/
 
-client/blinkitClone/**/fastlane/report.xml
-client/blinkitClone/**/fastlane/Preview.html
-client/blinkitClone/**/fastlane/screenshots
-client/blinkitClone/**/fastlane/test_output
+client/**/fastlane/report.xml
+client/**/fastlane/Preview.html
+client/**/fastlane/screenshots
+client/**/fastlane/test_output
 
 # Bundle artifact
-client/blinkitClone/*.jsbundle
+client/*.jsbundle
 
 # Ruby / CocoaPods
-client/blinkitClone/**/Pods/
-client/blinkitClone/vendor/bundle/
+client/**/Pods/
+client/vendor/bundle/
 
 # Temporary files created by Metro to check the health of the file watcher
-client/blinkitClone/.metro-health-check*
+client/.metro-health-check*
 
 # testing
-client/blinkitClone/coverage
+client/coverage
 
 # Yarn
-client/blinkitClone/.yarn/*
-client/blinkitClone/!.yarn/patches
-client/blinkitClone/!.yarn/plugins
-client/blinkitClone/!.yarn/releases
-client/blinkitClone/!.yarn/sdks
-client/blinkitClone/!.yarn/versions
+client/.yarn/*
+client/!.yarn/patches
+client/!.yarn/plugins
+client/!.yarn/releases
+client/!.yarn/sdks
+client/!.yarn/versions
 
